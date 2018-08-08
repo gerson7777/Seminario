@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "I am in welcome";
+    //view bag es una maleta donde se puede meter muchas cosa como se  pueda
+}
+
+
+<h2>Welcome</h2>
+<ul>
+    @for(int i=0; i< ViewBag.numTimes; i++)
+    {
+        <li>
+            @ViewBag.Message
+        </li>
+    }
+</ul>
+
+
+<p>
+    @DateTime.Now.ToShortDateString();
+</p>
